@@ -6,14 +6,7 @@ Vagrant.configure("2") do |config|
     {
       hostname: "node1",
       ip: "192.168.103.10",
-      box: "bento/ubuntu-18.04",
-      box_version: "201803.24.0"
-    },
-    {
-      hostname: "node2",
-      ip: "192.168.103.11",
-      box: "bento/ubuntu-18.04",
-      box_version: "201803.24.0"
+      box: "generic/ubuntu2010",
     },
   ]
 
