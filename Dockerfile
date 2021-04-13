@@ -1,3 +1,4 @@
-FROM ubuntu:18.04
-ADD ./scripts/provisioning.sh .
-RUN ./provisioning.sh
+FROM ljishen/perf
+ADD ./scripts/docker_provisioning.sh .
+RUN ./docker_provisioning.sh
+ENTRYPOINT ["bash"]
